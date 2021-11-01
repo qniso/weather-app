@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(187, 217, 243);
+    button {
+        height: auto;
+    }
+    p {
+        color: rgb(41, 70, 163);
+        font-weight: 900;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+.user-info {
+    mat-card:nth-child(1) {
+        width: 40%;
+    }
+    mat-card {
+        width: 50%;
+    }
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}

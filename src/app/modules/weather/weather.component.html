@@ -1,0 +1,19 @@
+<header>
+    <p>WeatherLogo</p>
+    <button mat-raised-button color="primary" (click)='exit()'>Exit</button>
+</header>
+<div class="user-info">
+    <mat-card>
+        <h1>Weather works!</h1>
+        <p>Welcome {{userName}}</p>
+        <button mat-stroked-button color="primary" (click)='logInfo()'>Enter</button>
+    </mat-card>
+    <mat-card>
+        <div class="forecast">
+            <h1>Forecast</h1>
+            <h2>City {{userSity}}</h2>
+            <h3>Temp: {{temp}}°C</h3>
+            <h3>Feels like: {{feelLikeTemp}}°C</h3>
+        </div>
+    </mat-card>
+</div>
