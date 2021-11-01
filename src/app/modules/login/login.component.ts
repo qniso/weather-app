@@ -26,16 +26,7 @@ export class LoginComponent implements OnInit {
       Validators.required])
     })
   }
-  get errorMessageForUserName(){
-    if(this.userProfile.controls['name'].hasError('required')){
-      return 'This form is reqired';
-    } return this.userProfile.controls['name'].hasError('name')? 'Not a valid login' : 'Inputs must contain only English words.';
-  }
-  get errorMessageForUserCity(){
-    if(this.userProfile.controls['сity'].hasError('required')){
-      return 'This form is reqired';
-    } return this.userProfile.controls['сity'].hasError('сity') ? 'Not a valid login' : 'Inputs must contain only English words.';
-  }
+  
   submit(){
     console.log(this.userProfile.value);
     localStorage.setItem('name',this.userProfile.controls['name'].value);
